@@ -32,7 +32,7 @@
   },
   "selectionSignals": {
     "servicesCount": 6,
-    "imagePoolCount": 3,
+    "imagePoolCount": 2,
     "hasRelevantImagery": true
   },
   "resolvedVisualDirection": {
@@ -66,7 +66,7 @@
     "motion_preset_reason": "visual system default (dark-premium → sticky-storytelling)",
     "motion_preset_content_gated": false,
     "services_count": 6,
-    "image_pool_count": 3,
+    "image_pool_count": 2,
     "has_relevant_imagery": true,
     "experimental_preset": "glass-3d-space",
     "experimental_preset_label": "3D Glass Space",
