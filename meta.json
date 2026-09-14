@@ -1,0 +1,66 @@
+{
+  "templateKey": "general_business",
+  "heroVariant": "oversized-editorial",
+  "serviceLayout": "asymmetric-cards",
+  "ctaStyle": "outline",
+  "paletteSeed": 0,
+  "heroSeed": 0,
+  "copySeed": 0,
+  "visualSystem": {
+    "key": "editorial-oversized",
+    "label": "Editorial / Oversized Typography",
+    "dark": false,
+    "cardStyle": "outline-mono",
+    "ctaLayout": "split-image",
+    "selectionReason": "no strong category/content signal — rotated by seed among content-suitable systems"
+  },
+  "motionPreset": {
+    "key": "editorial-split-mask",
+    "label": "Editorial Split-Text + Mask Reveal",
+    "selectionReason": "visual system default (editorial-oversized → editorial-split-mask)",
+    "contentGated": false
+  },
+  "experimentalPreset": null,
+  "selectionSignals": {
+    "servicesCount": 6,
+    "imagePoolCount": 2,
+    "hasRelevantImagery": false
+  },
+  "resolvedVisualDirection": {
+    "palette_source": "visual_system_locked",
+    "palette_key": "editorial-ink",
+    "palette": {
+      "key": "editorial-ink",
+      "primary": "#2b1d10",
+      "primaryDark": "#160e08",
+      "accent": "#a9702f",
+      "textDark": "#1c140b",
+      "textOnPrimary": "#fbf6ef",
+      "bgLight": "#faf5eb",
+      "bgAlt": "#f1e8d8",
+      "border": "#e3d5bc",
+      "radius": "2px",
+      "ctaStyle": "outline",
+      "headingFont": "Fraunces",
+      "bodyFont": "Source Sans 3",
+      "googleFonts": "Fraunces:wght@600;700;800|Source+Sans+3:wght@400;500;600"
+    },
+    "hero_variant": "oversized-editorial",
+    "section_style": "boxed",
+    "image_category": "general",
+    "matched_keywords": [],
+    "visual_system": "editorial-oversized",
+    "visual_system_label": "Editorial / Oversized Typography",
+    "visual_system_reason": "no strong category/content signal — rotated by seed among content-suitable systems",
+    "motion_preset": "editorial-split-mask",
+    "motion_preset_label": "Editorial Split-Text + Mask Reveal",
+    "motion_preset_reason": "visual system default (editorial-oversized → editorial-split-mask)",
+    "motion_preset_content_gated": false,
+    "services_count": 6,
+    "image_pool_count": 2,
+    "has_relevant_imagery": false,
+    "experimental_preset": null,
+    "experimental_preset_label": null,
+    "experimental_preset_reason": null
+  }
+}
