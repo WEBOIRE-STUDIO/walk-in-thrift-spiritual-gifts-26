@@ -32,8 +32,8 @@
   },
   "selectionSignals": {
     "servicesCount": 6,
-    "imagePoolCount": 2,
-    "hasRelevantImagery": false
+    "imagePoolCount": 3,
+    "hasRelevantImagery": true
   },
   "resolvedVisualDirection": {
     "palette_source": "template_default",
@@ -56,7 +56,7 @@
     },
     "hero_variant": "dark-glass",
     "section_style": "boxed",
-    "image_category": "general",
+    "image_category": "thrift-store",
     "matched_keywords": [],
     "visual_system": "dark-premium",
     "visual_system_label": "Dark Premium",
@@ -66,8 +66,8 @@
     "motion_preset_reason": "visual system default (dark-premium → sticky-storytelling)",
     "motion_preset_content_gated": false,
     "services_count": 6,
-    "image_pool_count": 2,
-    "has_relevant_imagery": false,
+    "image_pool_count": 3,
+    "has_relevant_imagery": true,
     "experimental_preset": "glass-3d-space",
     "experimental_preset_label": "3D Glass Space",
     "experimental_preset_reason": "dark-premium default embellishment"
