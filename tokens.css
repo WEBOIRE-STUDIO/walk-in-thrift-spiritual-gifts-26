@@ -1,0 +1,13 @@
+:root {
+  --primary: #2b1d10;
+  --primary-dark: #160e08;
+  --accent: #a9702f;
+  --text-dark: #1c140b;
+  --text-on-primary: #fbf6ef;
+  --bg-light: #faf5eb;
+  --bg-alt: #f1e8d8;
+  --border: #e3d5bc;
+  --radius: 2px;
+  --font-heading: 'Fraunces';
+  --font-body: 'Source Sans 3';
+}
