@@ -534,6 +534,27 @@ body.theme-dark .bento-cell.bento-stat .stat-number { color: var(--accent); }
   .about-bento-grid { grid-template-columns: 1fr; min-height: auto; }
   .about-bento-media { min-height: 280px; }
 }
+
+/* ---------- Image gallery / strip (buildGallery in sections.js) ----------
+   Varied crop per tile (portrait/landscape/square via aspect-ratio) plus an
+   asymmetric grid for 3 photos — one larger feature tile beside two smaller
+   stacked ones — so this reads as an editorial spread, not a uniform stock-
+   photo grid of identical squares. Scroll parallax on .gallery-img is
+   scripted in script.js; .img-hover (already applied by sections.js) adds
+   the same hover zoom used elsewhere. */
+.gallery-grid { display: grid; gap: 20px; margin-top: 8px; }
+.gallery-grid-2 { grid-template-columns: 1fr 1fr; }
+.gallery-grid-3 { grid-template-columns: 1.3fr 1fr; grid-template-rows: 1fr 1fr; }
+.gallery-grid-3 .gallery-tile:first-child { grid-row: span 2; aspect-ratio: auto; }
+.gallery-tile { position: relative; border-radius: var(--radius); overflow: hidden; }
+.gallery-crop-portrait { aspect-ratio: 3 / 4; }
+.gallery-crop-landscape { aspect-ratio: 16 / 10; }
+.gallery-crop-square { aspect-ratio: 1 / 1; }
+@media (max-width: 780px) {
+  .gallery-grid-2, .gallery-grid-3 { grid-template-columns: 1fr; grid-template-rows: none; }
+  .gallery-grid-3 .gallery-tile:first-child { grid-row: auto; }
+  .gallery-tile, .gallery-crop-portrait, .gallery-crop-landscape, .gallery-crop-square { aspect-ratio: 4 / 3; }
+}
 @media (max-width: 860px) {
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
   .bento-cell.span-2, .bento-cell.span-2-row { grid-column: span 2; grid-row: span 1; }
