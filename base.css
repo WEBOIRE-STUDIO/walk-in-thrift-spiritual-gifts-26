@@ -4,7 +4,13 @@
    generator picked — not from editing this file per demo. */
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; display: block; }
+/* Set on both html and body: a translated-but-not-yet-revealed element
+   (opacity:0, mid-entrance-animation transform, waiting on its own
+   ScrollTrigger/IntersectionObserver to fire) still extends the *scrollable*
+   bounds of whichever element is acting as the page's real scroller even
+   while nothing is visibly painted there — body-only overflow-x:hidden left
+   documentElement.scrollWidth exceeding the viewport in that window. */
+html { scroll-behavior: smooth; display: block; overflow-x: hidden; }
 body {
   display: block;
   margin: 0;
