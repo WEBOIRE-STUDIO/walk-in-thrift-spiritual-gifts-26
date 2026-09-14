@@ -192,6 +192,18 @@
             scrollTrigger: { trigger: aboutImg.closest('section'), start: 'top bottom', end: 'bottom top', scrub: .6 },
           });
         }
+
+        // ---- Gallery strip: each tile's photo drifts independently as its
+        // own tile crosses the viewport — same scrub-linked technique as the
+        // About photo, alternating direction per tile so the strip doesn't
+        // just look like one repeated effect.
+        var galleryImgs = Array.prototype.slice.call(document.querySelectorAll('.gallery-tile .gallery-img'));
+        galleryImgs.forEach(function (elImg, i) {
+          window.gsap.to(elImg, {
+            yPercent: i % 2 === 0 ? -8 : 8, scale: 1.1, ease: 'none',
+            scrollTrigger: { trigger: elImg.closest('.gallery-tile'), start: 'top bottom', end: 'bottom top', scrub: .6 },
+          });
+        });
       }
 
       // ---- Hero exit: a pure opacity dissolve, no scale ----
